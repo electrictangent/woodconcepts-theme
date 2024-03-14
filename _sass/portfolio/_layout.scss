@@ -1,3 +1,46 @@
-.footer {
-    background-color: aqua;
+.hero {
+  background-color: $accent01;
+}
+
+.landing {
+  background-color: $accent02;
+}
+
+/* For desktop view */
+.mulcol {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  border: 5px solid black;
+}
+
+.leftcol {
+  float: right;
+  width: 50%;
+}
+
+.rightcol {
+  float: left;
+  width: 50%;
+}
+
+/* For tablet and smaller viewports */
+@media (max-width: 768px) {
+  .mulcol {
+    flex-direction: column;
+  }
+  .leftcol {
+    width: 100%;
+  }
+  
+  .rightcol {
+    width: 100%;
+  }
+}
+
+.leftcol,
+.rightcol {
+  background-color: magenta;
 }

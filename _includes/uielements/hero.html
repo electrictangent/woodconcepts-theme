@@ -1,1 +1,13 @@
-<h1>helo</h1>
+<div class="hero">
+    {%- if include.tagline -%}
+    <h1>{{ include.tagline }}</h1>
+    {%- endif -%} 
+
+    {%- if include.description -%}
+    <p>{{ include.description }}</p>
+    {%- endif -%} 
+
+    {%- if include.button -%}
+    <p>{{ include.button }}</p>
+    {%- endif -%}
+</div>

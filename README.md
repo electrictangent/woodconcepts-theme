@@ -48,3 +48,5 @@ To add a custom directory to your theme-gem, please edit the regexp in `woodconc
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+Some SCSS from Minima theme (https://github.com/jekyll/minima/), licenced under MIT. Copyright (c) 2016-present Parker Moore and the minima contributors.
