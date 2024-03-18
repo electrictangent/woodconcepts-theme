@@ -2,10 +2,10 @@
 
     {% for item in page.galleryitems %}
     <div class="tile">
-      <h3>{{ item.title }}</h3>
+      <h2>{{ item.title }}</h2>
 
-      <div>
-        <img src="{{ item.imageurl }}" alt="{{ item.imagealt }}" />
+      <div class="img-container">
+        <img src="{{ item.imageurl | relative_url }}" alt="{{ item.imagealt }}" />
       </div>
 
       <p>{{ item.description }}</p>

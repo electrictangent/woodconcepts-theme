@@ -1,11 +1,3 @@
-.hero {
-  background-color: $accent01;
-}
-
-.landing {
-  background-color: $accent02;
-}
-
 /* For desktop view */
 .mulcol {
   display: flex;
@@ -45,12 +37,67 @@
   background-color: magenta;
 }
 
+// ========================
+// For uielements/hero.html
+// ========================
+.hero {
+  width: 90%;
+  margin: 2rem auto 2rem auto;
+  text-align: center;  
+}
+
+.large-button {
+  background-color: $accent02;
+  display: block;
+  width: 15rem;
+  height: 2rem;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+.large-button {
+  // padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border: $accent02 3px solid;
+  border-radius: 0px;
+  background: $accent02;
+  color: $foreground-color;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.large-button:hover {
+  border: $accent02-dark 3px solid;
+  background: $accent02-light;
+  color: $foreground-color;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.large-button:active {
+  background: transparent;
+  color: $foreground-color;
+  text-decoration: none;
+}
+
+.large-button:visited {
+  color: $foreground-color;
+}
+
+/* Media query for phone */
+@media (max-width: 767px) {
+  .hero{
+    width: calc(100% - 0.8rem);
+    padding: 0 0.4rem 0 0.4rem;
+  }
+}
+
+
 // ===========================
 // For uielements/gallery.html
 // ===========================
 
 .gallery  {
-  background-color: $accent01;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -59,23 +106,52 @@
 }
 
 .tile {
-  width: 30%;
-  height: 45vh;
+  width: calc(33% - 2rem);
   padding: 1rem;
-  overflow: hidden;
+  text-align: center;
 }
+
+.tile p{
+  padding-top: 0.5rem;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+  height: 25vh;
+}
+
+.img-container img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+//   transition: all 0.3s ease;
+}
+
+// Don't know if I liek this effect
+// .img-container img:hover{
+//   height: 150%;
+//   width: 150%;
+//   transition: all 0.3s ease;
+// }
 
 /* Media query for phone */
 @media (max-width: 767px) {
   .tile {
-    width: 100%; /* Adjust as needed */
+    width: 100%;
+  }
+  .img-container{
+    height: 30vh;
+  }
+  .gallery{
+    width: 100%;
   }
 }
 
 /* Media query for tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   .tile {
-    width: calc(50% - 2rem); /* Adjust as needed */
+    width: calc(50% - 2rem);
   }
 }
 

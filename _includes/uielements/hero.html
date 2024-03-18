@@ -1,13 +1,14 @@
-<div class="hero">
-    {%- if include.tagline -%}
-    <h1>{{ include.tagline }}</h1>
+<div class="hero" >
+
+    {%- if page.hero.title -%}
+        <h1>{{ page.hero.title }}</h1>
     {%- endif -%} 
 
-    {%- if include.description -%}
-    <p>{{ include.description }}</p>
+    {%- if page.hero.description -%}
+        <p>{{ page.hero.description }}</p>
     {%- endif -%} 
-
-    {%- if include.button -%}
-    <p>{{ include.button }}</p>
+    {%- if page.hero.button -%}
+        <a class="large-button" href="{{ page.hero.buttonurl }}">{{ page.hero.button }}</a>
     {%- endif -%}
+
 </div>
