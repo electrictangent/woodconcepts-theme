@@ -44,3 +44,39 @@
 .rightcol {
   background-color: magenta;
 }
+
+// ===========================
+// For uielements/gallery.html
+// ===========================
+
+.gallery  {
+  background-color: $accent01;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 2rem auto 2rem auto;
+}
+
+.tile {
+  width: 30%;
+  height: 45vh;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* Media query for phone */
+@media (max-width: 767px) {
+  .tile {
+    width: 100%; /* Adjust as needed */
+  }
+}
+
+/* Media query for tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tile {
+    width: calc(50% - 2rem); /* Adjust as needed */
+  }
+}
+
+
