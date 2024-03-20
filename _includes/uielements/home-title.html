@@ -1,13 +1,18 @@
-<div class="landing">
-    {%- if include.tagline -%}
-    <h2>{{ include.tagline }}</h2>
-    {%- endif -%} 
-
-    {%- if include.description -%}
-    <p>{{ include.description }}</p>
-    {%- endif -%} 
-
-    {%- if include.button -%}
-    <p>{{ include.button }}</p>
-    {%- endif -%}
+<div class="home-title">
+  <div class="home-inner">
+    {% case include.order %} 
+        {% when "1" %}
+            <h1>{{ include.text }}</h1>
+        {% when "2" %}
+            <h2>{{ include.text }}</h2>
+        {% when "3" %}
+            <h3>{{ include.text }}</h3>
+        {% when "4" %}
+            <h4>{{ include.text }}</h4>
+        {% when "5" %}
+            <h5>{{ include.text }}</h5>
+        {% else %}
+            <h6>{{ include.text }}</h6>
+    {% endcase %}
+  </div>
 </div>

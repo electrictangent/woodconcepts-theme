@@ -1,4 +1,9 @@
-<div class="hero" >
+<section class="hero" style="background-image: url({{ page.hero.imageurl }});">
+    {% if include.nav == "true" %}
+        <img src="{{ site.logoimgsrc | relative_url }}" alt="{{ site.sitename }}" />
+    {% endif %}
+
+    <div class="hero-text">
 
     {%- if page.hero.title -%}
         <h1>{{ page.hero.title }}</h1>
@@ -7,8 +12,10 @@
     {%- if page.hero.description -%}
         <p>{{ page.hero.description }}</p>
     {%- endif -%} 
+
     {%- if page.hero.button -%}
         <a class="large-button" href="{{ page.hero.buttonurl }}">{{ page.hero.button }}</a>
     {%- endif -%}
 
-</div>
+  </div>
+</section>
