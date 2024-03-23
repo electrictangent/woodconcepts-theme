@@ -1,7 +1,12 @@
 @charset "utf-8";
 
+// Size variables
+$max-content-width: 1024px;
+
+// Color variables
 $accent01: #2500ad;
-$accent01-light: #3070d7;
+$accent01-light: #0049bd;
+$accent01-dark: #0f0081;
 
 $accent02: #ce6e0e;
 $accent02-light: #ea8d02;
@@ -13,7 +18,7 @@ $foreground-color: #efefef;
 
 $link-base-color: $accent01;
 $link-hover-color: $accent01-light;
-$link-visited-color: purple;
+$link-visited-color: $accent02-dark;
 
 $border-color-01: $accent02;
 

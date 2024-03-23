@@ -1,6 +1,6 @@
 <section class="hero" style="background-image: url({{ page.hero.imageurl }});">
-    {% if include.nav == "true" %}
-        <img src="{{ site.logoimgsrc | relative_url }}" alt="{{ site.sitename }}" />
+    {% if include.header == "true" %}
+        {% include header.html %}
     {% endif %}
 
     <div class="hero-text">
