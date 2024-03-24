@@ -13,8 +13,15 @@ layout: default
   </div>
   <div class="column">
     <div class="rightcol">
-      <h1>Contact us</h1>
-      {% include uielements/contact-form.html %}
+      {% if page.contacttitle %}
+      <h1>{{ page.contacttitle }}</h1>
+      {% endif %}
+
+      {% if page.contactdescription %}
+      <p>{{ page.contactdescription }}</p>
+      {% endif %}
+
+      {% include uielements/contact-form.html onsubmit="#" %}
     </div>
   </div>
 </section>
