@@ -365,17 +365,23 @@ button {
 }
 
 #phonelabel {
-  height: 1rem;
   color: $foreground-color;
+  margin: 0 0 0 5px;
 }
 
 #phone {
-  border-top: none;
-  border-right: none;
-  border-bottom: $foreground-color 2px solid;
-  border-left: none;
+  border: none;
+  margin: 0;
+  font-size: 0.7rem;
+  padding: 0 0 0 5px;
 }
 
 #phone:focus{
-  border-bottom: $accent02 2px solid;
+  font-size: 1rem;
+  border: none;
+}
+
+.inputfield{
+  border-bottom: $foreground-color 2px solid;
+  height: 2.5rem;
 }

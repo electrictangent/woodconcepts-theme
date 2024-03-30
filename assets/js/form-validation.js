@@ -11,7 +11,7 @@ email.addEventListener("input", (event) => {
 
 function changeStuff(){
 
-  document.getElementById("phonelabel").style.fontSize = '0.8rem';
+  document.getElementById("phonelabel").style.fontSize = '0.7rem';
   document.getElementById("phonelabel").style.color = '#ce6e0e';
   document.getElementById("phonelabel").style.fontWeight = '700';
   
