@@ -1,7 +1,28 @@
 
+const email = document.getElementById("email");
 
-// Email validation function
-function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
+email.addEventListener("input", (event) => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an email address!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+function changeStuff(){
+
+  document.getElementById("phonelabel").style.fontSize = '0.8rem';
+  document.getElementById("phonelabel").style.color = '#ce6e0e';
+  document.getElementById("phonelabel").style.fontWeight = '700';
+  
 }
+
+function changeStuff2(){
+  
+  document.getElementById("phonelabel").style.color = '#fff';
+  document.getElementById("phonelabel").style.fontSize = '1rem';
+  document.getElementById("phonelabel").style.fontWeight = '400';
+
+}
+document.getElementById("phone").addEventListener("focus", changeStuff); 
+document.getElementById("phone").addEventListener("focusout", changeStuff2); 

@@ -1,4 +1,4 @@
-<form name="contact-form" action="{{ include.onsubmit }}" onsubmit="return validateForm()" method="post" >
+<form name="contact-form" action="{{ include.onsubmit }}" method="post" >
   <label for="name">Name</label>
   <input type="text" id="name" name="name" required />
 
@@ -8,8 +8,9 @@
   <label for="email">Email</label>
   <input type="email" id="email" name="email" required />
 
-  <label for="phone">Phone Number</label>
+  <label for="phone" id="phonelabel">Phone Number</label>
   <input type="tel" id="phone" name="phone" />
+
 
   <label for="message">Message</label>
   <textarea id="message" name="message" required></textarea>

@@ -346,6 +346,7 @@ input, textarea {
 
 label{
   color: $accent02;
+  transition: 0.2s all ease;
 }
 
 input:focus, textarea:focus{
@@ -361,4 +362,20 @@ button {
   cursor: pointer;
   font-family: $base-font-family;
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+#phonelabel {
+  height: 1rem;
+  color: $foreground-color;
+}
+
+#phone {
+  border-top: none;
+  border-right: none;
+  border-bottom: $foreground-color 2px solid;
+  border-left: none;
+}
+
+#phone:focus{
+  border-bottom: $accent02 2px solid;
 }

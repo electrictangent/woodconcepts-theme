@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 lang: en-NZ
 logoimgsrc: /assets/logo.png
-
+copyright: (c) 2024 Woodconcepts. Web design by <a href="https://pukekocode.nz">pukekocode.nz</a>
 
 # Build settings
 plugins:

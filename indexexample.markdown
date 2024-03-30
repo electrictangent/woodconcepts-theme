@@ -40,5 +40,4 @@ galleryitems:
 
 {% include uielements/gallery.html %}
 
-{% include uielements/home-title.html text="See raw power" order="1" %}
 {% include uielements/home-textbox.html text="Yes! I want it all!" %}
