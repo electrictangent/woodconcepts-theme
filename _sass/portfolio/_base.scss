@@ -1,6 +1,5 @@
 html {
   font-size: $base-font-size;
-  background-color: $background-color;
 }
 
 /**
@@ -34,6 +33,7 @@ body {
     $base-font-family;
   color: $foreground-color;
   background-color: $background-color;
+  background: url('/assets/img/testbg.png') repeat;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -336,7 +336,7 @@ label, input, textarea {
 input, textarea {
   width: calc(100% - 14px);
   padding: 5px;
-  background-color: $background-color;
+  background-color: transparent;
   color: $foreground-color;
   border: $foreground-color 2px solid;
   appearance: none;

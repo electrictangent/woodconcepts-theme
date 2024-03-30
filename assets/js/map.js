@@ -6,7 +6,7 @@ var map = L.map('map', {
 }).setView(latlng,20);
 
 var marker = L.marker(latlng).addTo(map);
-marker.bindPopup("<b>Reclaimed Timber</b><br>50 Tip Road").openPopup();
+marker.bindPopup("<b>Reclaimed Timber Traders</b><br/>50 Tip Road<br/>Palmerston North 4412").openPopup();
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
