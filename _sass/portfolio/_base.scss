@@ -329,19 +329,23 @@ form {
 label, input, textarea {
   display: block;
   margin-bottom: 10px;
-  color: $foreground-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
 }
 
 input, textarea {
-  width: calc(100% - 10px);
+  width: calc(100% - 14px);
   padding: 5px;
   background-color: $background-color;
+  color: $foreground-color;
   border: $foreground-color 2px solid;
   appearance: none;
   outline: none;
   transition: 0.2s all ease;
+}
+
+label{
+  color: $accent02;
 }
 
 input:focus, textarea:focus{

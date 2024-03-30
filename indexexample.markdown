@@ -2,6 +2,8 @@
 layout: home
 title: index
 var1: Footer
+contacttitle: Contact us
+contactdescription: Want a quote? Contact us via the form below and we will email you as soon as possible.
 
 hero:
   title: Custom furniture tailored to yourself
@@ -34,8 +36,7 @@ galleryitems:
     imageurl: /assets/img/commericalproject2.jpg
     imagealt: We do Commercial projects
 ---
-
-{% include uielements/hero.html %}
+{% include uielements/hero.html header="true" %}
 
 {% include uielements/gallery.html %}
 
