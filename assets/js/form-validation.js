@@ -1,4 +1,3 @@
-
 const email = document.getElementById("email");
 
 email.addEventListener("input", (event) => {
@@ -9,20 +8,18 @@ email.addEventListener("input", (event) => {
   }
 });
 
-function changeStuff(){
+const forms = document.querySelectorAll("#contact-form");
+const form = forms[0];
 
-  document.getElementById("phonelabel").style.fontSize = '0.7rem';
-  document.getElementById("phonelabel").style.color = '#ce6e0e';
-  document.getElementById("phonelabel").style.fontWeight = '700';
-  
-}
-
-function changeStuff2(){
-  
-  document.getElementById("phonelabel").style.color = '#fff';
-  document.getElementById("phonelabel").style.fontSize = '1rem';
-  document.getElementById("phonelabel").style.fontWeight = '400';
-
-}
-document.getElementById("phone").addEventListener("focus", changeStuff); 
-document.getElementById("phone").addEventListener("focusout", changeStuff2); 
+Array.from(form.elements).forEach((input) => {
+  input.addEventListener("focus", function () {
+    input.labels[0].classList.add("labelfocused");
+    input.classList.add("inputfocused");
+  });
+  input.addEventListener("focusout", function () {
+    if (!input.value) {
+      input.labels[0].classList.remove("labelfocused");
+      input.classList.remove("inputfocused");
+    }
+  });
+});

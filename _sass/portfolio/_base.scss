@@ -333,7 +333,21 @@ label, input, textarea {
   font-size: $base-font-size;
 }
 
-input, textarea {
+input {
+  width: calc(100% - 14px);
+  padding: 5px;
+  background-color: transparent;
+  color: $foreground-color;
+  border: none;
+  margin: 0;
+  font-size: 0.7rem;
+  padding: 0 0 0 5px;
+  appearance: none;
+  outline: none;
+  transition: 0.2s all ease;
+}
+
+textarea {
   width: calc(100% - 14px);
   padding: 5px;
   background-color: transparent;
@@ -344,13 +358,14 @@ input, textarea {
   transition: 0.2s all ease;
 }
 
-label{
-  color: $accent02;
+textarea:focus{
+  border: $accent02 2px solid;
   transition: 0.2s all ease;
 }
 
-input:focus, textarea:focus{
-  border: $accent02 2px solid;
+label{
+  color: $accent02;
+  margin: 0 0 0 5px;
   transition: 0.2s all ease;
 }
 
@@ -364,24 +379,20 @@ button {
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
 }
 
-#phonelabel {
-  color: $foreground-color;
-  margin: 0 0 0 5px;
-}
-
-#phone {
-  border: none;
-  margin: 0;
-  font-size: 0.7rem;
-  padding: 0 0 0 5px;
-}
-
-#phone:focus{
-  font-size: 1rem;
-  border: none;
-}
-
 .inputfield{
+  margin-bottom: 1rem;
   border-bottom: $foreground-color 2px solid;
   height: 2.5rem;
+}
+
+.labelfocused{
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: $accent02;
+}
+
+.inputfocused{
+  font-size: 1rem;
+  border: none;
+  transition: 0.2s all ease;
 }
