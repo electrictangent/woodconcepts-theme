@@ -1,20 +1,16 @@
-<section class="hero" style="background-image: url({{ page.hero.imageurl }});">
+<section class="hero" style="background-image: url({{ include.imageurl }});">
     {% if include.header == "true" %}
         {% include header.html %}
     {% endif %}
 
     <div class="hero-text">
 
-    {%- if page.hero.title -%}
-        <h1>{{ page.hero.title }}</h1>
+    {%- if include.description -%}
+        {{ include.description | markdownify }}
     {%- endif -%} 
 
-    {%- if page.hero.description -%}
-        <p>{{ page.hero.description }}</p>
-    {%- endif -%} 
-
-    {%- if page.hero.button -%}
-        <a class="large-button" href="{{ page.hero.buttonurl }}">{{ page.hero.button }}</a>
+    {%- if include.button -%}
+        <a class="large-button" href="{{ include.buttonurl }}">{{ include.button }}</a>
     {%- endif -%}
 
   </div>

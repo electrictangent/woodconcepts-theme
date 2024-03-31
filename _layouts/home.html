@@ -16,9 +16,19 @@ layout: default
       <script src="{{ "/assets/js/map.js" | relative_url }}"></script>
 
 
-      <p>Reclaimed Timber Traders</p>
-      <p>50 Tip Road</p>
-      <p>Palmerston North 4412</p>
+      <div class="genmulcol">
+        <div class="genleftcolumn">
+            <p class="bold">Address:</p>
+        </div>
+          
+        <div class="genrightcolumn">
+            {{ site.address | markdownify }}
+        </div>
+      </div>
+      
+      <p><span class="bold">Email:</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+      <p><span class="bold">Phone:</span> <a href="tel:{{- site.phone -}}">{{ site.phone }}</a></p>
       
     </div>
   </div>
@@ -32,7 +42,7 @@ layout: default
       <p>{{ page.contactdescription }}</p>
       {% endif %}
 
-      {% include uielements/contact-form.html onsubmit="#" %}
+      {% include uielements/contact-form.html onsubmit=page.submitaction %}
     </div>
   </div>
 </section>

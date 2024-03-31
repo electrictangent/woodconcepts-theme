@@ -61,17 +61,26 @@
     width: 90%;
     margin: 0 auto;
   }
+
   .leftcol,
   .rightcol {
     width: 100%;
     padding: 0;
+  }
+
+  .leftcol {
+    padding-right: 1rem;
+  }
+
+  #map {
+    width: 40vw;
   }
 }
 
 #map {
   height: 60vh;
   max-width: calc(($max-content-width / 2) - 1rem);
-  width: 40vw;
+  width: calc(45vw - 1rem);
 }
 
 // ==========================
@@ -96,6 +105,7 @@ header {
   margin: 0 auto 0 auto;
   max-width: $max-content-width;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 /* Media query for phone */
