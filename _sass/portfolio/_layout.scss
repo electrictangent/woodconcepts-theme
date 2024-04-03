@@ -157,7 +157,7 @@ header {
 }
 
 .tile {
-  width: calc(33% - 2rem);
+  width: calc(50% - 2rem);
   padding: 1rem;
   text-align: center;
 }
@@ -169,7 +169,7 @@ header {
 .img-container {
   overflow: hidden;
   position: relative;
-  height: 25vh;
+  height: 40vh;
 }
 
 .img-container img {
@@ -205,6 +205,9 @@ header {
   .tile {
     width: calc(50% - 1rem);
     padding: 0.5rem;
+  }
+  .img-container {
+    height: 50vh;
   }
 }
 

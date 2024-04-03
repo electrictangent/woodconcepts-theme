@@ -1,13 +1,11 @@
 ---
 layout: home
 title: index
-var1: Footer
 contacttitle: Contact us
 contactdescription: Want a quote? Contact us via the form below and we will email you as soon as possible.
 submitaction: /hello.php
 
 hero:
-  title: 
   description: >-
     # Custom furniture tailored to yourself
 
