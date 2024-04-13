@@ -50,7 +50,7 @@ test: >-
 ---
 {% include uielements/hero.html header="true" imageurl=page.hero.imageurl description=page.hero.description button=page.hero.button buttonurl=page.hero.buttonurl %}
 
-{% include uielements/gallery.html %}
+{% include uielements/gallery.html galleryitems=page.galleryitems %}
 
 {% include uielements/home-textbox.html text=page.test %}
 
