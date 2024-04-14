@@ -7,10 +7,12 @@ layout: default
 {% endcapture %}
 
 {% capture titledecorated %}
-# {{ page.title }}
+# <a href="{{ site.url }}"><i class="fa-solid fa-house"></i></a> &nbsp;&nbsp;&rsaquo;&nbsp;&nbsp; {{ page.title }}
 {% endcapture %}
 
-{% include uielements/hero.html imageurl="/assets/img/hero.jpg" header="true" description=titledecorated %}
+{% include uielements/hero.html imageurl="/assets/img/hero.jpg" header="true" %}
+
+{% include uielements/textbox.html text=titledecorated %}
 
 {% include uielements/textbox.html text=text %}
 
