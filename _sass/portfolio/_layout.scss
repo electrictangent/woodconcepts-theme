@@ -228,3 +228,58 @@ header {
     padding: 0 0.4rem 0 0.4rem;
   }
 }
+
+// ============================
+// For uielements/carousel.html
+// ============================
+
+.carousel {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  max-width: $max-content-width;
+}
+
+.carousel-card {
+  background-color: $accent01;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex: 0 0 calc(33.333333% - 2.5rem);
+  margin-right: 0.5rem;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-outer {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-controls{
+  margin: 1rem auto 2rem auto;
+  width: fit-content;
+}
+
+/* Media query for tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-card {
+    flex: 0 0 calc(50% - 2.5rem);
+  }
+}
+
+/* Media query for phone */
+@media (max-width: 767px) {
+  .carousel {
+    width: calc(100% - 0.8rem);
+    padding: 0 0.4rem 0 0.4rem;
+  }
+
+  .carousel-card {
+    flex: 0 0 calc(100% - 2.5rem);
+  }
+}
+

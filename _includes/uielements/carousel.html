@@ -1,0 +1,21 @@
+<section class="carousel">
+  <h1>{{ include.title }}</h1>
+
+  <div class="carousel-outer">
+    <div class="carousel-inner">
+    {% for item in include.quotes %}
+      <div class="carousel-card">
+        <p><q>{{ item }}</q></p>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button onclick="showPrevSlide()">Back</button>
+    <button onclick="showNextSlide()">Forward</button>
+  </div>
+
+</section>
+
+<script src="{{ "/assets/js/carousel.js" | relative url }}"></script>

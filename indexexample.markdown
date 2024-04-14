@@ -40,6 +40,11 @@ galleryitems:
     imageurl: /assets/img/commericalproject2.jpg
     imagealt: We do Commercial projects
 
+caroquotes:
+  - Great trade – we are really happy with the drawers
+  - Just amazing, so beautiful, matches our Matai floors, thanks so much
+  - we LOVE your seats. How wonderful they look. everyone loves them, and I feel supported by your prices being so reasonable - and caring.
+
 test: >-
   This is a test
 
@@ -54,3 +59,4 @@ test: >-
 
 {% include uielements/home-textbox.html text=page.test %}
 
+{% include uielements/carousel.html quotes=page.caroquotes title="Customer reviews" %}
