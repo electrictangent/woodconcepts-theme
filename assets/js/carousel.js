@@ -43,10 +43,8 @@ function toggleSlide() {
 function updateCarousel() {
   updateViewport()
 
-  if(!paused){
-    const offset = -currentIndex;
-    carouselInner.style.transform = `translateX(calc(${cardWidth}%  * ${offset} )`;
-  }
+  const offset = -currentIndex;
+  carouselInner.style.transform = `translateX(calc(${cardWidth}%  * ${offset} )`;
 }
 
 function showNextSlide() {
@@ -59,5 +57,11 @@ function showPrevSlide() {
   updateCarousel();
 }
 
+function autoSlide() {
+  if(!paused){
+    showNextSlide()
+  }
+}
 
-setInterval(showNextSlide, 3000);
+
+setInterval(autoSlide, 3000);
