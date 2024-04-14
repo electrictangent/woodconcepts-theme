@@ -6,7 +6,11 @@ layout: default
 {{ content }}
 {% endcapture %}
 
-{% include header.html %}
+{% capture titledecorated %}
+# {{ page.title }}
+{% endcapture %}
+
+{% include uielements/hero.html imageurl="/assets/img/hero.jpg" header="true" description=titledecorated %}
 
 {% include uielements/textbox.html text=text %}
 

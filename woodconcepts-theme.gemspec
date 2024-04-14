@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "woodconcepts-theme"
-  spec.version       = "1.0.4"
+  spec.version       = "1.0.5"
   spec.authors       = ["Ethan Wellington"]
   spec.email         = ["ethan@pukekocode.nz"]
 
