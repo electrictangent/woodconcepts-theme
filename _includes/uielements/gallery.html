@@ -8,7 +8,7 @@
         <img src="{{ item.imageurl | relative_url }}" alt="{{ item.imagealt }}" />
       </div>
 
-      <p>{{ item.description }}</p>
+      {{ item.description | markdownify }}
     </div>
     {% endfor %}
 

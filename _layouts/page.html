@@ -2,4 +2,11 @@
 layout: default
 ---
 
+{% capture text %}
 {{ content }}
+{% endcapture %}
+
+{% include header.html %}
+
+{% include uielements/textbox.html text=text %}
+
