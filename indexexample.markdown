@@ -57,6 +57,6 @@ test: >-
 
 {% include uielements/gallery.html galleryitems=page.galleryitems %}
 
-{% include uielements/home-textbox.html text=page.test %}
+{% include uielements/textbox.html text=page.test %}
 
 {% include uielements/carousel.html quotes=page.caroquotes title="Customer reviews" %}

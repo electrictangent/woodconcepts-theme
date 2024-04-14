@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "woodconcepts-theme"
-  spec.version       = "1.0.1"
-  spec.authors       = ["electrictangent"]
-  spec.email         = ["electrictangent@protonmail.com"]
+  spec.version       = "1.0.3"
+  spec.authors       = ["Ethan Wellington"]
+  spec.email         = ["ethan@pukekocode.nz"]
 
   spec.summary       = "Custom theme for Wood Concepts website"
   spec.homepage      = "https://no-remote-origin-yet"
