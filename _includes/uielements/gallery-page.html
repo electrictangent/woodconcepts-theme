@@ -1,0 +1,15 @@
+<section class="gallery-page">
+
+    {% for item in include.galleryitems %}
+    <div class="tile">
+      <h2>{{ item.title }}</h2>
+
+      <div class="img-container">
+        <img src="{{ item.imageurl | relative_url }}" alt="{{ item.imagealt }}" />
+      </div>
+
+      {{ item.description | markdownify }}
+    </div>
+    {% endfor %}
+
+</section>

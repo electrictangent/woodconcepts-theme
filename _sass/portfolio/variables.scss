@@ -4,15 +4,15 @@
 $max-content-width: 1024px;
 
 // Color variables
-$accent01: #071B84;
-$accent01-light: #0049bd;
-$accent01-dark: #0f0081;
+$accent01: #ce6e0e; //#071B84;
+$accent01-light: #ea8d02; //#0049bd;
+$accent01-dark: #bd6217; //#0f0081;
 
-$accent02: #ce6e0e;
-$accent02-light: #ea8d02;
-$accent02-dark: #bd6217;
+$accent02: $accent01; //#ce6e0e;
+$accent02-light: $accent01-light; //#ea8d02;
+$accent02-dark: $accent01-dark; //#bd6217;
 
-$background-color: #252525;
+$background-color: #181818;
 $foreground-color: #efefef;
 
 // Link colors
