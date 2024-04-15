@@ -157,6 +157,7 @@ header {
 .gallery-page {
   flex-wrap: wrap;
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin: 2rem auto 2rem auto;
@@ -270,6 +271,14 @@ header {
   border-radius: 1rem;
   flex: 0 0 calc(33.333333% - 2.5rem);
   margin-right: 0.5rem;
+  height: 8rem;
+  line-height: 8rem;
+}
+
+.carousel-card p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .carousel-inner {
