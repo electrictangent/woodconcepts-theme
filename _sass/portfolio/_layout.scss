@@ -150,6 +150,23 @@ header {
   margin: 0.5rem auto 0.5rem auto;
 }
 
+// ================================
+// For uielements/gallery-page.html
+// ================================
+
+.gallery-page {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem auto 2rem auto;
+}
+
+.gallery-page .tile {
+  width: calc(50% - 1rem);
+  padding: 0.5rem;
+}
+
 // ===========================
 // For uielements/gallery.html
 // ===========================
@@ -195,7 +212,7 @@ header {
 
 /* Media query for phone */
 @media (max-width: 767px) {
-  .tile {
+  .tile, .gallery-page .tile {
     padding: 0.4rem;
     width: 100%;
   }
@@ -209,7 +226,7 @@ header {
 
 /* Media query for tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .tile {
+  .tile,.gallery-page .tile {
     width: calc(50% - 1rem);
     padding: 0.5rem;
   }
@@ -300,20 +317,5 @@ header {
   }
 }
 
-// ================================
-// For uielements/gallery-page.html
-// ================================
 
-.gallery-page {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 2rem auto 2rem auto;
-}
-
-.gallery-page .tile {
-  width: calc(50% - 1rem);
-  padding: 0.5rem;
-}
 
