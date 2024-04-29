@@ -1,13 +1,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-    {% if page.title == 'index' %}
-        {{ site.sitename }}
-    {% else %}
-        {{ site.sitename }} - {{ page.title }}
-    {% endif %}
-</title>
+{% if page.title == 'index' %}
+<title>{{ site.sitename }}</title>
+{% else %}
+<title>{{ site.sitename }} - {{ page.title }}</title>
+{% endif %}
 <link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | relative_url}}">
 <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,4 +14,6 @@ crossorigin=""/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
 type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{% seo title=false %}
 </head>
